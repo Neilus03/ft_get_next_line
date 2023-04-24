@@ -1,1 +1,1 @@
-# ft_get_next_line
+# ft get next line
