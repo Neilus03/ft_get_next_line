@@ -6,8 +6,13 @@
 /*   By: nde-la-f <nde-la-f@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:27:32 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/22 15:27:37 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/24 11:03:31 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "get_next_line.h"
 
+ssize_t ft_read(int fd, void *buf, size_t count)
+{
+	
+}
