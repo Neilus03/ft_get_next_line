@@ -3,13 +3,12 @@
 /*                                                        :::      ::::::::   */
 /*   ft_get_next_line.h                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: nde-la-f <nde-la-f@student.42barcel>       +#+  +:+       +#+        */
+/*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:28:01 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/24 10:52:11 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/27 08:49:52 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef FT_GET_NEXT_LINE_H
 # define FT_GET_NEXT_LINE_H
@@ -23,11 +22,15 @@
 # include <stdlib.h>
 
 # ifndef BUFFER_SIZE
-# define BUFFER_SIZE 1000
+#  define BUFFER_SIZE 1000
 # endif
 
 char	*get_next_line(int fd);
-ssize_t	ft_strlen(char *str);
+size_t	ft_strlen(char *str);
+char	*ft_strchr(const char *str, int c);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strdup(const char *s1);
+ssize_t	read_buffer(int fd, char **buffer);
 
 #endif //GET_NEXT_LINE_H
-
