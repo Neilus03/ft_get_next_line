@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:28:01 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/30 12:13:29 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:56:10 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,11 +25,13 @@
 # endif
 
 char	*get_next_line(int fd);
-size_t	ft_strlen(char *str);
-char	*ft_strchr(const char *str, int c);
+size_t	ft_strlen(const char *str);
+char	*ft_find_char(const char *str, int c);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s1);
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+size_t	ft_strlcat(char *dst, const char *src, size_t size);
 ssize_t	read_buffer(int fd, char **buffer);
-
+int		main(void);
 #endif //GET_NEXT_LINE_H

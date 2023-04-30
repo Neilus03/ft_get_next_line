@@ -6,13 +6,13 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:27:32 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/30 12:22:34 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:56:08 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_get_next_line.h"
 
-size_t	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
 	size_t	i;
 
@@ -40,28 +40,18 @@ char	*ft_find_char(const char *str, int c)
 char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*new_string;
-	int		i;
-	int		j;	
+	size_t	len_s1;
+	size_t	len_s2;
 
 	if (!s1 || !s2)
 		return (NULL);
-	new_string = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-	if (new_string == NULL)
+	len_s1 = ft_strlen(s1);
+	len_s2 = ft_strlen(s2);
+	new_string = (char *)malloc((len_s1 + len_s2 + 1) * sizeof(char));
+	if (!new_string)
 		return (NULL);
-	i = 0;
-	while (s1[i] != '\0')
-	{
-		new_string[i] = s1[i];
-		i++;
-	}
-	j = 0;
-	while (s2[j] != '\0')
-	{
-		new_string[i] = s2[j];
-		j++;
-		i++;
-	}
-	new_string[i] = '\0';
+	ft_strlcpy(new_string, s1, len_s1 + 1);
+	ft_strlcat(new_string, s2, len_s1 + len_s2 + 1);
 	return (new_string);
 }
 

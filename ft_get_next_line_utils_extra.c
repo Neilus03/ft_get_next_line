@@ -6,11 +6,47 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 08:53:06 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/30 12:25:24 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:56:12 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_get_next_line.h"
+#include <string.h>
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t len_dst)
+{
+	size_t	i;
+
+	i = 0;
+	if (len_dst <= 0)
+		return (ft_strlen(src));
+	while ((i < len_dst - 1) && src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (ft_strlen(src));
+}
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
+	size_t	dst_len;
+	size_t	i;
+
+	dst_len = ft_strlen(dst);
+	i = 0;
+	if (size < dst_len)
+		return (ft_strlen(src) + size);
+	while (size > 0 && dst_len < size - 1 && src[i])
+	{
+		dst[dst_len++] = src[i++];
+	}
+	dst[dst_len] = '\0';
+	while (src[i++])
+		dst_len++;
+	return (dst_len);
+}
 
 char	*ft_strdup(const char *s1)
 {

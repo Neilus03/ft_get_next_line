@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:26:34 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/30 12:34:40 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:56:21 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,10 @@ int	main(void)
 }
 */
 /*
+This was my previous GNL file before splitting it up in 2
+parts for meeting the 25 line criteria
+
+
 #include "ft_get_next_line.h"
 
 char	*get_next_line(int fd)
