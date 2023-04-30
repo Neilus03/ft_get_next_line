@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:27:32 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/30 12:56:08 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 13:16:27 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!new_string)
 		return (NULL);
 	ft_strlcpy(new_string, s1, len_s1 + 1);
-	ft_strlcat(new_string, s2, len_s1 + len_s2 + 1);
+	if (!ft_strlcat(new_string, s2, len_s1 + len_s2 + 1))
+	{
+		free(new_string);
+		return (NULL);
+	}
 	return (new_string);
 }
 

@@ -1,0 +1,4 @@
+hello\n
+world\n
+yes\n
+line
