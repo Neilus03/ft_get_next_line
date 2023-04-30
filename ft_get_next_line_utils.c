@@ -6,20 +6,15 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:27:32 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/27 08:53:55 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:22:34 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_get_next_line.h"
 
-ssize_t	ft_read(int fd, void *buf, size_t count)
-{
-	read(fd, buf, count);
-}
-
 size_t	ft_strlen(char *str)
 {
-	int	i;
+	size_t	i;
 
 	if (!str)
 		return (0);
@@ -29,7 +24,7 @@ size_t	ft_strlen(char *str)
 	return (i);
 }
 
-char	*ft_strchr(const char *str, int c)
+char	*ft_find_char(const char *str, int c)
 {
 	while (*str)
 	{
@@ -48,6 +43,8 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	int		i;
 	int		j;	
 
+	if (!s1 || !s2)
+		return (NULL);
 	new_string = (char *)malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	if (new_string == NULL)
 		return (NULL);
@@ -75,6 +72,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t			j;
 	size_t			s_len;
 
+	if (!s)
+		return (NULL);
 	s_len = ft_strlen(s);
 	if (start >= s_len)
 		return (ft_strdup(""));

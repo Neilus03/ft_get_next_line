@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:26:34 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/27 09:12:31 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/04/30 12:27:15 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,12 +24,15 @@ char	*get_next_line(int fd)
 		return (NULL);
 	if (!buf)
 		buf = ft_strdup("");
-	newline = ft_strchr(buf, '\n');
+	if (!buf)
+		return (NULL);
+	newline = ft_find_char(buf, '\n');
 	while (newline == NULL)
 	{
 		bytes_read = read_buffer(fd, &buf);
 		if (bytes_read <= 0)
 			break ;
+		newline = ft_find_char(buf, '\n');
 	}
 	if (newline)
 	{
@@ -47,6 +50,7 @@ char	*get_next_line(int fd)
 	return (result);
 }
 
+/*
 int	main(void)
 {
 	char	*line;
@@ -65,3 +69,4 @@ int	main(void)
 	close(fd1);
 	return (0);
 }
+*/
