@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:27:32 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/04/30 13:16:27 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/05/01 14:57:58 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,4 +86,20 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	}
 	substring[j] = '\0';
 	return (substring);
+}
+
+size_t	ft_strlcpy(char *dst, const char *src, size_t len_dst)
+{
+	size_t	i;
+
+	i = 0;
+	if (len_dst <= 0)
+		return (ft_strlen(src));
+	while ((i < len_dst - 1) && src[i])
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (ft_strlen(src));
 }
