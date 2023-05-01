@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 12:43:16 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/05/01 14:41:54 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/05/01 15:03:35 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,5 +34,6 @@ int	main(void)
 		i++;
 	}
 	close(fd);
+	printf("\narrived till the end\n");
 	return (0);
 }

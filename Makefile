@@ -18,10 +18,10 @@ CYAN = \033[96m
 #---------------------------------------------------#
 
 # Compiler
-CC = gcc
+CC = cc
 
 # Compiler flags
-CFLAGS = -Wall -Wextra -Werror -I
+CFLAGS = -Wall -Wextra -Werror
 
 # Command to remove files
 RM = rm -f
