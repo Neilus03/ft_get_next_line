@@ -10,4 +10,5 @@ Reading from a file descriptor (FD) is way too tedious
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 
-![42](https://user-images.githubusercontent.com/87651732/235460024-e0ce007e-d223-4bf8-a5b3-3870385aae67.svg)
+
+![-42-_-nde-la-f](https://user-images.githubusercontent.com/87651732/235460785-6127a6ab-9f43-4b99-a43e-ea90040dab67.svg)
