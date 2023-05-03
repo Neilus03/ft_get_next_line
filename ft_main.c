@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/30 12:43:16 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/05/01 15:03:35 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/05/03 11:26:13 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(void)
 	char	*line;
 	int		i;
 
-	fd = open("tests/fd3.txt", O_RDONLY);
+	fd = open("tests/fd1.txt", O_RDONLY);
 	if (fd < 0)
 	{
 		printf("Error opening file\n");

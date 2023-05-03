@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:26:34 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/05/01 15:52:42 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/05/03 12:22:08 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,13 @@ char	*get_next_line(int fd)
 	while (newline == NULL)
 	{
 		bytes_read = read_buffer(fd, &buf);
-		if (bytes_read <= 0)
+		if (bytes_read < 0)
+		{
+			free(buf);
+			buf = NULL;
+			return (NULL);
+		}
+		if (bytes_read == 0)
 			break ;
 		newline = ft_find_char(buf, '\n');
 	}

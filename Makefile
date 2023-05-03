@@ -3,7 +3,7 @@
 #---------------------------------------------------#
 
 # Name of the output library
-NAME = gnl.a
+NAME = libftgnl.a
 
 # Define some color codes for pretty printing
 RED = \033[91m
