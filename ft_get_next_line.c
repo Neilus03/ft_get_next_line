@@ -6,12 +6,11 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:26:34 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/06/23 10:44:26 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/06/23 10:51:09 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_get_next_line.h"
-#include <fcntl.h>
 
 ssize_t	read_buffer(int fd, char **buffer)
 {
@@ -92,7 +91,7 @@ char	*get_next_line(int fd)
 	}
 	return (process_buffer(&buf, newline));
 }
-
+/*
 int	main(void)
 {
 	char	*line;
@@ -112,7 +111,7 @@ int	main(void)
 	close(fd1);
 	return (0);
 }
-
+*/
 /*
 This was my previous GNL file before splitting it up in 2
 parts for meeting the 25 line criteria

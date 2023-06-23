@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/30 12:43:16 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/05/03 11:26:13 by nde-la-f         ###   ########.fr       */
+/*   Created: 2023/06/23 10:46:58 by nde-la-f          #+#    #+#             */
+/*   Updated: 2023/06/23 10:51:06 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,20 @@
 
 int	main(void)
 {
-	int		fd;
 	char	*line;
 	int		i;
+	int		fd1;
 
-	fd = open("tests/fd1.txt", O_RDONLY);
-	if (fd < 0)
+	fd1 = open("tests/fd3.txt", O_RDONLY);
+	i = 1;
+	line = get_next_line(fd1);
+	while (line != NULL)
 	{
-		printf("Error opening file\n");
-		return (1);
-	}
-	i = 0;
-	while (i < 10)
-	{
-		line = get_next_line(fd);
-		printf("line[%d]: %s\n", i, line);
+		printf("line [%02d]: %s\n", i, line);
 		free(line);
 		i++;
+		line = get_next_line(fd1);
 	}
-	close(fd);
-	printf("\narrived till the end\n");
+	close(fd1);
 	return (0);
 }
