@@ -1,0 +1,2 @@
+Line 1 with Unicode characters: åß∂ƒ©˙∆˚¬…æ.
+Line 2 with non-ASCII characters: こんにちは世界.

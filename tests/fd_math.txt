@@ -1,0 +1,21 @@
+In mathematics, the quadratic formula is a fundamental tool for solving quadratic equations of the form ax^2 + bx + c = 0. The formula is given by:
+
+x = (-b ± √(b^2 - 4ac)) / (2a)
+
+where a, b, and c are coefficients of the quadratic equation. The symbol ± represents two possible solutions, one with a plus sign and the other with a minus sign.
+
+The quadratic formula can be used to find the roots or zeros of a quadratic equation, which are the values of x that satisfy the equation. It is particularly useful when factoring or other methods are not feasible or practical.
+
+For example, consider the quadratic equation 2x^2 + 5x - 3 = 0. By applying the quadratic formula, we can find the solutions:
+
+x = (-5 ± √(5^2 - 4 * 2 * -3)) / (2 * 2)
+
+Simplifying further:
+
+x = (-5 ± √(25 + 24)) / 4
+x = (-5 ± √49) / 4
+x = (-5 ± 7) / 4
+
+So the two solutions are x = (-5 + 7) / 4 and x = (-5 - 7) / 4, which simplify to x = 1 and x = -3/2 respectively.
+
+By using mathematical notation and the quadratic formula, we can solve various quadratic equations and explore the behavior of these functions in different scenarios.
