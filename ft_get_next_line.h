@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:28:01 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/06/23 10:51:07 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/06/23 11:31:36 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
 # include <fcntl.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 10000
+#  define BUFFER_SIZE 42
 # endif
 
 char	*get_next_line(int fd);
