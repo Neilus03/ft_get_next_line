@@ -6,11 +6,12 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:26:34 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/05/03 12:22:08 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/06/23 10:44:26 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_get_next_line.h"
+#include <fcntl.h>
 
 ssize_t	read_buffer(int fd, char **buffer)
 {
@@ -20,7 +21,10 @@ ssize_t	read_buffer(int fd, char **buffer)
 
 	bytes_read = read(fd, tmp_buf, BUFFER_SIZE);
 	if (bytes_read < 0)
+	{	
+		write(1, "Error Reading\n", 13);
 		return (-1);
+	}
 	if (bytes_read > 0)
 	{		
 		tmp_buf[bytes_read] = '\0';
@@ -53,8 +57,11 @@ char	*process_buffer(char **buf, char *newline)
 		result = ft_strdup(*buf);
 		free(*buf);
 		*buf = NULL;
-		if (!result)
+		if (!result || *result == '\0')
+		{
+			free(result);
 			return (NULL);
+		}
 	}
 	return (result);
 }
@@ -66,48 +73,46 @@ char	*get_next_line(int fd)
 	char		*newline;
 
 	if (fd < 0 || BUFFER_SIZE < 1)
+	{
 		return (NULL);
+	}
 	if (!buf)
 		buf = ft_strdup("");
 	if (!buf)
+	{
 		return (NULL);
+	}
 	newline = ft_find_char(buf, '\n');
 	while (newline == NULL)
 	{
 		bytes_read = read_buffer(fd, &buf);
-		if (bytes_read < 0)
-		{
-			free(buf);
-			buf = NULL;
-			return (NULL);
-		}
-		if (bytes_read == 0)
+		if (bytes_read <= 0)
 			break ;
 		newline = ft_find_char(buf, '\n');
 	}
 	return (process_buffer(&buf, newline));
 }
 
-/*
 int	main(void)
 {
 	char	*line;
 	int		i;
 	int		fd1;
 
-	fd1 = open("tests/fd1.txt");
+	fd1 = open("tests/fd3.txt", O_RDONLY);
 	i = 1;
-	while (i < 7)
+	line = get_next_line(fd1);
+	while (line != NULL)
 	{
-		line = get_next_line(fd1);
-		printf("line [%02d]: %s", i, line);
+		printf("line [%02d]: %s\n", i, line);
 		free(line);
 		i++;
+		line = get_next_line(fd1);
 	}
 	close(fd1);
 	return (0);
 }
-*/
+
 /*
 This was my previous GNL file before splitting it up in 2
 parts for meeting the 25 line criteria

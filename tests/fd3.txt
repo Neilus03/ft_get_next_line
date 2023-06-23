@@ -1,4 +1,5 @@
-hello\n
-world\n
-yes\n
+hello
+world
+yes
 line
+final

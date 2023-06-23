@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 08:53:06 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/05/01 14:58:15 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/06/23 10:24:40 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ char	*ft_strdup(const char *s1)
 	dst = (char *)malloc(len * sizeof(char));
 	if (!dst)
 		return (NULL);
-	if (ft_strlcpy(dst, s1, len) < len)
-		return (NULL);
+	ft_strlcpy(dst, s1, len);
 	return (dst);
 }
