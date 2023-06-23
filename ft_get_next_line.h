@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:28:01 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/06/23 09:47:11 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/06/23 10:51:07 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strdup(const char *s1);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
-int		main(void);
+int		ft_main(void);
 
 #endif //GET_NEXT_LINE_H

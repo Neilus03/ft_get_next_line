@@ -34,7 +34,7 @@ RM = rm -f
 HEADER = ft_get_next_line.h
 
 # Source files
-SRC    = ft_get_next_line.c ft_get_next_line_utils.c ft_get_next_line_utils_extra.c
+SRC    = ft_get_next_line.c ft_get_next_line_utils.c
 
 # Object files generated from source files
 OBJ    = $(SRC:.c=.o)

@@ -6,11 +6,45 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 15:26:34 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/06/23 10:51:09 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/06/23 10:56:22 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_get_next_line.h"
+
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
+{
+	size_t	dst_len;
+	size_t	i;
+
+	dst_len = ft_strlen(dst);
+	i = 0;
+	if (size < dst_len)
+		return (ft_strlen(src) + size);
+	while (size > 0 && dst_len < size - 1 && src[i])
+	{
+		dst[dst_len++] = src[i++];
+	}
+	dst[dst_len] = '\0';
+	while (src[i++])
+		dst_len++;
+	return (dst_len);
+}
+
+char	*ft_strdup(const char *s1)
+{
+	char	*dst;
+	size_t	len;
+
+	if (!s1)
+		return (NULL);
+	len = ft_strlen(s1) + 1;
+	dst = (char *)malloc(len * sizeof(char));
+	if (!dst)
+		return (NULL);
+	ft_strlcpy(dst, s1, len);
+	return (dst);
+}
 
 ssize_t	read_buffer(int fd, char **buffer)
 {
@@ -91,69 +125,3 @@ char	*get_next_line(int fd)
 	}
 	return (process_buffer(&buf, newline));
 }
-/*
-int	main(void)
-{
-	char	*line;
-	int		i;
-	int		fd1;
-
-	fd1 = open("tests/fd3.txt", O_RDONLY);
-	i = 1;
-	line = get_next_line(fd1);
-	while (line != NULL)
-	{
-		printf("line [%02d]: %s\n", i, line);
-		free(line);
-		i++;
-		line = get_next_line(fd1);
-	}
-	close(fd1);
-	return (0);
-}
-*/
-/*
-This was my previous GNL file before splitting it up in 2
-parts for meeting the 25 line criteria
-
-
-#include "ft_get_next_line.h"
-
-char	*get_next_line(int fd)
-{
-	static char	*buf = NULL;
-	ssize_t		bytes_read;
-	char		*newline;
-	char		*result;
-	char		*tmp;
-
-	if (fd < 0 || BUFFER_SIZE < 1)
-		return (NULL);
-	if (!buf)
-		buf = ft_strdup("");
-	if (!buf)
-		return (NULL);
-	newline = ft_find_char(buf, '\n');
-	while (newline == NULL)
-	{
-		bytes_read = read_buffer(fd, &buf);
-		if (bytes_read <= 0)
-			break ;
-		newline = ft_find_char(buf, '\n');
-	}
-	if (newline)
-	{
-		result = ft_substr(buf, 0, newline - buf);
-		tmp = ft_strdup(newline + 1);
-		free(buf);
-		buf = tmp;
-	}
-	else
-	{
-		result = ft_strdup(buf);
-		free(buf);
-		buf = NULL;
-	}
-	return (result);
-}
-*/
