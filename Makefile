@@ -1,3 +1,5 @@
+#NO NEED FOR MAKEFILE IN THE PROJECT DELIVERY!
+
 #---------------------------------------------------#
 #                 GET_NEXT_LINE MAKEFILE            #
 #---------------------------------------------------#
