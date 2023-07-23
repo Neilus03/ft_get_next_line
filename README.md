@@ -5,16 +5,16 @@ Welcome to my "Get Next Line" (GnL) project from 42 Coding School! 🚀
 This repository contains my implementation of the "Get Next Line" project, a fundamental C programming challenge that focuses on file I/O, memory management, and string manipulation.
 
 
-| Contents                                             |
-|-----------------------------------------------------|
-| [Result](#result)                                  |
-| [Key Objectives](#key-objectives)                  |
-| [Execution](#execution)                            |
-| [Clarifying Common Doubts about the Buffer Size](#clarifying-common-doubts-about-the-buffer-size)  |
-| [Disclaimer about Tests](#disclaimer-about-tests)  |
-| [Contributions](#contributions)                    |
-| [Feedback](#feedback)                              |
-| [Thank You](#thank-you)                            |
+| Contents                                             |---------------------|
+|-----------------------------------------------------|---------------------|
+| [Result](#result)                                  |---------------------|
+| [Key Objectives](#key-objectives)                  |---------------------|
+| [Execution](#execution)                            |---------------------|
+| [Clarifying Common Doubts about the Buffer Size](#clarifying-common-doubts-about-the-buffer-size)  |---------------------|
+| [Disclaimer about Tests](#disclaimer-about-tests)  |---------------------|
+| [Contributions](#contributions)                    |---------------------|
+| [Feedback](#feedback)                              |---------------------|
+| [Thank You](#thank-you)                            |---------------------|
 
 ## [Result](<img width="198" alt="Screen Shot 2023-07-23 at 12 20 53 PM" src="https://github.com/Neilus03/ft_get_next_line/assets/87651732/857a5cb8-8c63-469b-ab88-c2fcd4b19e30">)
 <img width="198" alt="Screen Shot 2023-07-23 at 12 20 53 PM" src="https://github.com/Neilus03/ft_get_next_line/assets/87651732/857a5cb8-8c63-469b-ab88-c2fcd4b19e30">
