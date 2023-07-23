@@ -31,7 +31,7 @@ int	main(void)
 	int		i = 1;
 	int		fd1;
 
-	fd1 = open("/Users/nde-la-f/Documents/42/C_Cursus/GET_NEXT_LINE/GNL/tests/fd_strange_characters.txt", O_RDONLY);
+	fd1 = open("./fd_strange_characters.txt", O_RDONLY);
 	line = get_next_line(fd1);
 	while (line != NULL)
 	{
