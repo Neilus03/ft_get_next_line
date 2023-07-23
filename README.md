@@ -1,7 +1,5 @@
 # ft get next line
 
-## NOT YET READY DUE TO LEAKS!!
-
 
 Reading from a file descriptor (FD) is way too tedious
 
