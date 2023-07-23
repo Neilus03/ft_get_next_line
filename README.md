@@ -6,6 +6,7 @@ Reading from a file descriptor (FD) is way too tedious
 - Actual Status : finished.
 - Result        : 104.
 
+[!](file:///Users/nde-la-f/.TemporaryItems/folders.102352/TemporaryItems/(A%20Document%20Being%20Saved%20By%20screencaptureui)/Screen%20Shot%202023-07-23%20at%2012.20.53%20PM.png)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
