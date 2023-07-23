@@ -5,16 +5,16 @@ Welcome to my "Get Next Line" (GnL) project from 42 Coding School! 🚀
 This repository contains my implementation of the "Get Next Line" project, a fundamental C programming challenge that focuses on file I/O, memory management, and string manipulation.
 
 
-| Contents                                             |                    |
-|-----------------------------------------------------|                    |
-| [Result](#result)                                  |                     |
-| [Key Objectives](#key-objectives)                  |                    |
-| [Execution](#execution)                            |                    |
-| [Clarifying Common Doubts about the Buffer Size](#clarifying-common-doubts-about-the-buffer-size)  |                    |
-| [Disclaimer about Tests](#disclaimer-about-tests)  |                    |
-| [Contributions](#contributions)                    |                    |
-| [Feedback](#feedback)                              |                    |
-| [Thank You](#thank-you)                            |                    |
+| Contents                                             |           j         |
+|-----------------------------------------------------|             j       |
+| [Result](#result)                                  |             j        |
+| [Key Objectives](#key-objectives)                  |             j       |
+| [Execution](#execution)                            |              j      |
+| [Clarifying Common Doubts about the Buffer Size](#clarifying-common-doubts-about-the-buffer-size)  |        j            |
+| [Disclaimer about Tests](#disclaimer-about-tests)  |       j             |
+| [Contributions](#contributions)                    |       j             |
+| [Feedback](#feedback)                              |       j             |
+| [Thank You](#thank-you)                            |        j            |
 
 
 
