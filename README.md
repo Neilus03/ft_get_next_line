@@ -51,3 +51,10 @@ PD: By default I set as the read file a text about mathematics called `fd_math.t
 ## Contributions:
 
 I completed this project as part of my coursework at 42 Coding School. While I don't actively maintain it, feel free to fork the repository, make improvements, and submit pull requests.
+
+## Feedback:
+
+I'm open to feedback and suggestions for improving my implementation. If you have any ideas or spot any issues, please create an issue or reach out to me!
+
+## Thank You
+Thank you for visiting my repository and exploring the "Get Next Line" project. I hope you find it informative and useful for your own coding journey. Happy coding! 🌟
