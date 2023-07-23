@@ -35,7 +35,8 @@ then to see the result:
 ```
 ./a.out
 ```
-### Clarifying common doubts about the buffer size
+### Clarifying common doubts about the buffer size:
+
 For any BUFFER_SIZE bigger than or equal to 1 the program must work perfectly.
 
 At the end, the BUFFER_SIZE is no more than the size of the buffer used for reading data from a file descriptor into the remaining_str string (which acts as a big static container) in the get_next_line function. Buffer size only determines how many characters can be read at a time from the file into memory.
@@ -44,7 +45,9 @@ At the end, the BUFFER_SIZE is no more than the size of the buffer used for read
 - A larger BUFFER_SIZE, such as 1000, allows the get_next_line function to read a larger portion of the file into memory with each iteration, reducing the number of system calls needed to read the file.
 
 ### Disclaimer about tests: 
+
 PD: By default I set as the read file a text about mathematics called `fd_math.txt` , you can change it to any other file you have or one of the ones I propose (inside tests folder). You just need to change the path of the txt inside the `get_next_line.c` file, concretely in the main function at the end of the file.
 
 ### Contributions:
+
 I completed this project as part of my coursework at 42 Coding School. While I don't actively maintain it, feel free to fork the repository, make improvements, and submit pull requests.
