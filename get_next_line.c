@@ -68,14 +68,14 @@ char	*get_next_line(int fd)
 	remaining_str = update_remaining_str(remaining_str);
 	return (line);
 }
-/*
+
 int	main(void)
 {
 	char	*line;
 	int		i;
 	int		fd1;
 
-	fd1 = open("tests/fd_math.txt", O_RDONLY);
+	fd1 = open("./fd_math.txt", O_RDONLY);
 	i = 1;
 	line = get_next_line(fd1);
 	while (line != NULL)
@@ -88,4 +88,4 @@ int	main(void)
 	close(fd1);
 	return (0);
 }
-*/
+
