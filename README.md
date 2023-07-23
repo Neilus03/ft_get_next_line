@@ -18,7 +18,6 @@ This repository contains my implementation of the "Get Next Line" project, a fun
 ## [Result](<img width="198" alt="Screen Shot 2023-07-23 at 12 20 53 PM" src="https://github.com/Neilus03/ft_get_next_line/assets/87651732/857a5cb8-8c63-469b-ab88-c2fcd4b19e30">)
 <img width="198" alt="Screen Shot 2023-07-23 at 12 20 53 PM" src="https://github.com/Neilus03/ft_get_next_line/assets/87651732/857a5cb8-8c63-469b-ab88-c2fcd4b19e30">
 
-##  
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
  
