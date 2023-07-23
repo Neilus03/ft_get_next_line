@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/28 10:12:14 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/07/22 13:06:03 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/07/23 12:12:22 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ int	main(void)
 	int		i;
 	int		fd1;
 
-	fd1 = open("./fd_math.txt", O_RDONLY);
+	fd1 = open("./tests/fd_math.txt", O_RDONLY);
 	i = 1;
 	line = get_next_line(fd1);
 	while (line != NULL)

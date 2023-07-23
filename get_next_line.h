@@ -6,7 +6,7 @@
 /*   By: nde-la-f <nde-la-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/28 15:28:01 by nde-la-f          #+#    #+#             */
-/*   Updated: 2023/07/22 13:08:54 by nde-la-f         ###   ########.fr       */
+/*   Updated: 2023/07/23 12:09:03 by nde-la-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ char	*strjoin(char *s1, char *s2);
 size_t	ft_strlen(char *str);
 char	*extract_line_from_str(char *remainingStr);
 char	*update_remaining_str(char *remainingStr);
-int		main(void);
 #endif
