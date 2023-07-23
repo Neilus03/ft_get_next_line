@@ -4,14 +4,23 @@ Welcome to my "Get Next Line" (GnL) project from 42 Coding School! 🚀
 
 This repository contains my implementation of the "Get Next Line" project, a fundamental C programming challenge that focuses on file I/O, memory management, and string manipulation.
 
+ ## Table of Contents
+
+- [Result](#result)
+- [Key Objectives](#key-objectives)
+- [Execution](#execution)
+- [Clarifying Common Doubts about the Buffer Size](#clarifying-common-doubts-about-the-buffer-size)
+- [Disclaimer about Tests](#disclaimer-about-tests)
+- [Contributions](#contributions)
+- [Feedback](#feedback)
+- [Thank You](#thank-you)
+
 ## [Result](<img width="198" alt="Screen Shot 2023-07-23 at 12 20 53 PM" src="https://github.com/Neilus03/ft_get_next_line/assets/87651732/857a5cb8-8c63-469b-ab88-c2fcd4b19e30">)
 <img width="198" alt="Screen Shot 2023-07-23 at 12 20 53 PM" src="https://github.com/Neilus03/ft_get_next_line/assets/87651732/857a5cb8-8c63-469b-ab88-c2fcd4b19e30">
 
 ##  
 [![forthebadge](https://forthebadge.com/images/badges/made-with-c.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
- 
-
  
  
 ![-42-_-nde-la-f](https://user-images.githubusercontent.com/87651732/235460785-6127a6ab-9f43-4b99-a43e-ea90040dab67.svg)
