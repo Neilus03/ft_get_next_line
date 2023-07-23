@@ -17,6 +17,13 @@ This repository contains my implementation of the "Get Next Line" project, a fun
 ![-42-_-nde-la-f](https://user-images.githubusercontent.com/87651732/235460785-6127a6ab-9f43-4b99-a43e-ea90040dab67.svg)
 
 
+## Key Objectives:
+
+- Mastering file input/output (I/O) operations in C.
+- Effectively managing memory allocation and deallocation.
+- Handling different file descriptors and reading from them independently.
+- Properly manipulating character strings to parse and store lines.
+
 ## Execution:
 
 To easily execute the code copy the ssh link:
